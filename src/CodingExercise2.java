@@ -1,5 +1,4 @@
 
-
 /* Level 0 Exam: Coding  Exercise #2 */
 import javax.swing.JOptionPane;
 
@@ -10,7 +9,18 @@ import javax.swing.JOptionPane;
  **/
 
 public class CodingExercise2 {
-
+	public static void main(String[] args) {
+			int year = 2017;
+			String age = JOptionPane.showInputDialog("How many years have you been alive?");
+			int age2 = Integer.parseInt(age);
+			int yearborn = 2017 - age2;
+			JOptionPane.showMessageDialog(null, "You were born the year " + yearborn);
+			if (age2 > 30) {
+				JOptionPane.showMessageDialog(null, "You are too old to play this game");
+			} else {
+				JOptionPane.showMessageDialog(null, "Hi... :O");
+			}
+		}
 }
 
 
