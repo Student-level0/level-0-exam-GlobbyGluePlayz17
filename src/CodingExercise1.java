@@ -9,15 +9,25 @@ public class CodingExercise1 {
     public static void main(String[] args) {
     	Robot artist = new Robot();
    	 // 3. ask the user what color they would like the Robot to draw
-    	String color = JOptionPane.showInputDialog("Which color would you like the Robot to use? Red, green, or blue?");
+    	String color = JOptionPane.showInputDialog("Which color would you like the Robot to use?");
    	 // 4. use an if/else statement to set the pen color that the user requested (minimum of 2 colors)
     	for (int i = 0; i < 4; i++) {
     	if (color.equalsIgnoreCase("red")) {
 			artist.setPenColor(255, 0, 0);
+		} else if (color.equalsIgnoreCase("orange")) {
+			artist.setPenColor(244, 158, 66);
+		} else if (color.equalsIgnoreCase("yellow")) {
+			artist.setPenColor(255, 255, 0);
 		} else if (color.equalsIgnoreCase("green")) {
 			artist.setPenColor(0, 255, 0);
 		} else if (color.equalsIgnoreCase("blue")) {
 			artist.setPenColor(0, 0, 255);
+		} else if (color.equalsIgnoreCase("purple")) {
+			artist.setPenColor(100, 5, 100);
+		} else if (color.equalsIgnoreCase("pink")) {
+			artist.setPenColor(244, 66, 229);
+		} else if (color.equalsIgnoreCase("black")) {
+			artist.setPenColor(0, 0, 0);
 		} else {
 			JOptionPane.showMessageDialog(null, "Error. You did not enter a color.");
 			break;
@@ -32,3 +42,7 @@ public class CodingExercise1 {
 		}
     }
 }
+
+//127.5 - red
+
+//63.55
